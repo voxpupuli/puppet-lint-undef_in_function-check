@@ -9,6 +9,7 @@ describe 'undef_in_function' do
         <<-EOS
         foo('somestring', '')
         bar(foo('hello'), 'world')
+        baz 'hello', 'world'
         EOS
       }
 
@@ -22,16 +23,18 @@ describe 'undef_in_function' do
         <<-EOS
         foo('somestring', undef)
         bar(foo('hello'), undef)
+        baz 'hello', undef
         EOS
       }
 
       it 'should detect two problems' do
-        expect(problems).to have(2).problem
+        expect(problems).to have(3).problem
       end
 
       it 'should create a warning' do
         expect(problems).to contain_warning(msg).on_line(1).in_column(27)
         expect(problems).to contain_warning(msg).on_line(2).in_column(27)
+        expect(problems).to contain_warning(msg).on_line(3).in_column(22)
       end
     end
   end
