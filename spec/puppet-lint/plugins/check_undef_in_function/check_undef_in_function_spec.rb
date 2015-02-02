@@ -10,6 +10,10 @@ describe 'undef_in_function' do
         foo('somestring', '')
         bar(foo('hello'), 'world')
         baz 'hello', 'world'
+
+        file { 'bar':
+          source => undef,
+        }
         EOS
       }
 

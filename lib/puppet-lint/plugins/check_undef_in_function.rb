@@ -8,6 +8,9 @@ PuppetLint.new_check(:undef_in_function) do
             # function in a function
             (token.prev_code_token && token.prev_code_token.type == :LPAREN))
 
+            # Hash values are out of scope
+            next if token.next_code_token && token.next_code_token.type == :FARROW
+
             level = 0
             real_idx = 0
             in_paren = false
