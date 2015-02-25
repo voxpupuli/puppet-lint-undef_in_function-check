@@ -9,6 +9,19 @@ puppet-lint-undef_in_function-check
 
 A puppet-lint plugin to check for undef in function calls.
 
+## Installing
+
+### From the command line
+
+```shell
+$ gem install puppet-lint-undef_in_function-check
+```
+
+### In a Gemfile
+
+```ruby
+gem 'puppet-lint-undef_in_function-check', :require => false
+```
 
 ## Checks
 
