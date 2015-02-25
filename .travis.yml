@@ -13,7 +13,7 @@ matrix:
 deploy:
   provider: rubygems
   api_key:
-    secure: DdibNIoL887ijIcv7sglUdw4mNefvuCrLpYGk8mJKmftazdPmINxnuI2v48i4a7y89nSpALTzO9TE8ZlwoEZFopRgHBi0AaxbKXuJT9hlj21Wb7V2kifPfN7zZyoVuW665Xi6eDmQ0UG2kVke6o5aymFRnU5/k1wBxMv/gzOgMY=
+    secure: CEXDzaf3MLvM/ZKSGcXiNyfZkDueLrYiH5Y4CeYlOiOdGnOr8CTmKBr2cc3VCMSxICI84dwpOCbrufX7NDPgwpSPxEsW0Rph8M3cdsqIm2pNSNzYwh7pg5FZZsMPTAr7eGRCgbCX1uUtdQ6Kwvi279eoTUuwe4P7akeFlU2M25Q=
   on:
     rvm: 2.1.5
     tags: true
