@@ -1,9 +1,9 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-undef_in_function-check'
   spec.version     = '0.1.0'
-  spec.homepage    = 'https://github.com/camptocamp/puppet-lint-undef_in_function-check'
+  spec.homepage    = 'https://github.com/puppet-community/puppet-lint-undef_in_function-check'
   spec.license     = 'Apache-2.0'
-  spec.author      = 'Camptocamp'
+  spec.author      = 'Puppet Community'
   spec.email       = 'raphael.pinson@camptocamp.com'
   spec.files       = Dir[
     'README.md',
