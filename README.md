@@ -3,8 +3,7 @@ puppet-lint-undef_in_function-check
 
 [![License](https://img.shields.io/github/license/voxpupuli/puppet-lint-undef_in_function-check.svg)](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/blob/master/LICENSE)
 [![Test](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/actions/workflows/test.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/actions/workflows/test.yml)
-[![Release](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/actions/workflows/release.ym
-l)
+[![Release](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/puppet-lint-undef_in_function-check/actions/workflows/release.yml)
 [![RubyGem Version](https://img.shields.io/gem/v/puppet-lint-undef_in_function-check.svg)](https://rubygems.org/gems/puppet-lint-undef_in_function-check)
 [![RubyGem Downloads](https://img.shields.io/gem/dt/puppet-lint-undef_in_function-check.svg)](https://rubygems.org/gems/puppet-lint-undef_in_function-check)
 [![Donated by Camptocamp](https://img.shields.io/badge/donated%20by-camptocamp-fb7047.svg)](#transfer-notice)
