@@ -1,14 +1,11 @@
 puppet-lint-undef_in_function-check
 ===================================
 
-[![Build Status](https://img.shields.io/travis/puppet-community/puppet-lint-undef_in_function-check.svg)](https://travis-ci.org/puppet-community/puppet-lint-undef_in_function-check)
 [![Gem Version](https://img.shields.io/gem/v/puppet-lint-undef_in_function-check.svg)](https://rubygems.org/gems/puppet-lint-undef_in_function-check)
 [![Gem Downloads](https://img.shields.io/gem/dt/puppet-lint-undef_in_function-check.svg)](https://rubygems.org/gems/puppet-lint-undef_in_function-check)
-[![Coverage Status](https://img.shields.io/coveralls/puppet-community/puppet-lint-undef_in_function-check.svg)](https://coveralls.io/r/puppet-community/puppet-lint-undef_in_function-check?branch=master)
-[![Gemnasium](https://img.shields.io/gemnasium/puppet-community/puppet-lint-undef_in_function-check.svg)](https://gemnasium.com/puppet-community/puppet-lint-undef_in_function-check)
 [![Donated by Camptocamp](https://img.shields.io/badge/donated%20by-camptocamp-fb7047.svg)](#transfer-notice)
 
-A puppet-lint plugin to check for undef in function calls.
+A **DEPRECATED** puppet-lint plugin to check for undef in function calls.
 
 ## Installing
 
@@ -28,8 +25,16 @@ gem 'puppet-lint-undef_in_function-check', :require => false
 
 ### Undef passed to a function
 
-When functions are called, `undef` is cast into an empty string. Passing `undef` to a function is most likely not what you mean to do.
+~~When functions are called, `undef` is cast into an empty string. Passing `undef` to a function is most likely not what you mean to do.~~
 
+Since the [modern Puppet function API](https://github.com/puppetlabs/puppet-specifications/blob/d2e1fcd91ed74270cbd51cf830f0338b1a10d7c4/language/func-api.md)
+was introduced in Puppet 4, functions can now be passed `undef` and these parameters won't be cast to empty strings.
+
+All new functions should be written using this API and older functions migrated to it.
+
+Also considering that a puppet-lint plugin has no way of telling which API a function is written in, the use of this plugin is no longer recommended.
+
+**It is DEPRECATED and no longer maintained.**
 
 #### What you have done
 
@@ -61,7 +66,7 @@ PuppetLint.configuration.send('disable_undef_in_function_assignment')
 ## Transfer Notice
 
 This plugin was originally authored by [Camptocamp](http://www.camptocamp.com).
-The maintainer preferred that Puppet Community take ownership of the module for future improvement and maintenance.
+The maintainer preferred that Puppet Community (now [Voxpupuli](https://voxpupuli.org/)) take ownership of the module for future improvement and maintenance.
 Existing pull requests and issues were transferred over, please fork and continue to contribute here instead of Camptocamp.
 
 Previously: https://github.com/camptocamp/puppet-lint-undef_in_function-check
